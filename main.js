@@ -46,7 +46,7 @@ async function creerWebhooksEtEnvoyerMessages() {
   server.channels.cache.forEach(async (channel) => {
     if (channel.type === 'text') {
       const webhook = await channel.createWebhook('Webhook', {
-        avatar: 'https://i.imgur.com/AfFp7pu.png', // URL de l'avatar du webhook
+        avatar: 'https://i.imgur.com/AfFp7pu.png', // Webhook URL
       }).catch(console.error);
 
       if (webhook) {
