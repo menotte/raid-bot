@@ -52,7 +52,7 @@ async function creerWebhooksEtEnvoyerMessages() {
       if (webhook) {
         let messageCount = 0;
         setInterval(() => {
-          webhook.send('@everyone')
+          webhook.send('@everyone') // the message
             .then(() => {
               messageCount++;
               if (messageCount >= nombreMessages) {
